@@ -1,3 +1,15 @@
+
+<?php
+   /* 
+    #________conexão com a router_______#
+    
+        require_once('router.php');
+        session_status();
+
+    */
+?>
+
+
 <!DOCTYPE>
 <html lang="pt-br">
     <head>
@@ -27,7 +39,7 @@
                             <label> Nome completo </label>
                         </div>
                         <div class="cadastroEntradaDeDados">
-                            <input class="input" type="text" name="nome" value="" placeholder="Ex.: Letícia Pacheco dos Santos" maxlength="100">
+                            <input class="input" type="text" name="nome" value="" placeholder="Ex.: Letícia Pacheco dos Santos" maxlength="100" required>
                         </div>
                     </div>
 
@@ -37,7 +49,7 @@
                             <label> Data de nascimento </label>
                         </div>
                         <div class="cadastroEntradaDeDados">
-                            <input class="input" type="text" name="dtnascimento" value="" placeholder="Ex.: 03/10/2003">
+                            <input class="input" type="text" name="dtnascimento" value="" placeholder="Ex.: 03/10/2003" required>
                         </div>
                     </div>
                     
@@ -47,7 +59,7 @@
                             <label> E-mail </label>
                         </div>
                         <div class="cadastroEntradaDeDados">
-                            <input class="input" type="email" name="email" value="" placeholder="Ex.: leticia@gmail.com/">
+                            <input class="input" type="email" name="email" value="" placeholder="Ex.: leticia@gmail.com/" required>
                         </div>
                     </div>
 
@@ -57,7 +69,7 @@
                             <label> Profissão </label>
                         </div>
                         <div class="cadastroEntradaDeDados">
-                            <input class="input" type="text" name="profissao" value="" placeholder="Ex.: Desenvolvedora Web" maxlength="100">
+                            <input class="input" type="text" name="profissao" value="" placeholder="Ex.:Desenvolvedora Web" maxlength="100" required>
                         </div>
                     </div>
                         
@@ -81,25 +93,25 @@
                         </div>
                     </div>
                     
-                    <div class="containerCheckbox">
-                        <!--Notificações-->
+                    <!--Notificações-->
+                    <div class="containerCheckbox">                    
                         <div class="camposCheckbox">
                             <div class="cadastroEntradaDeDados">
-                                <input type="checkbox" name="ckNotificacao" value="1">                            
+                                <input type="checkbox" name="notificacao[]" value="whatsapp">                            
                                 <label> Número de celular possui Whatsapp</label>                            
                             </div>
                         </div>
                         
                         <div class="camposCheckbox">
                             <div class="cadastroEntradaDeDados">
-                                <input type="checkbox" name="ckNotificacao" value="2"> 
+                                <input type="checkbox" name="notificacao[]" value="email"> 
                                 <label> Enviar notificações por E-mail</label>
                             </div>
                         </div>
 
                         <div class="camposCheckbox">
                             <div class="cadastroEntradaDeDados">
-                                <input type="checkbox" name="ckNotificacao" value="3"> 
+                                <input type="checkbox" name="notificacao[]" value="sms"> 
                                 <label> Enviar notificações por SMS</label>
                             </div>
                         </div>

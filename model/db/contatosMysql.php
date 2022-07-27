@@ -1,9 +1,8 @@
 <?php
-
 /********************************************************************************************************************
-*Objetivo: Arquivo responsável pela manipulação de dados dertro do banco de dados(insert, update, select e delete).
+*Objetivo: Arquivo responsável pela manipulação de dados do banco de dados(insert, update, select e delete).
 *Autor: Lais Matos de Carvalho
-*Data: 21/03/22
+*Data: 21/07/22
 *Versão: 1.0
 *********************************************************************************************************************/
 
